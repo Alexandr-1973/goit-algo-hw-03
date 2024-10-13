@@ -9,7 +9,7 @@ def get_days_from_today(date):
         print(difference_days)
         return difference_days
     except ValueError:
-        user_new_date=input("You input invalid format date. Please, input date in format YYYY-MM-DD ")
-        get_days_from_today(user_new_date)
+        print("Invalid value")
+        return "Invalid value"
 
 get_days_from_today(user_date)
